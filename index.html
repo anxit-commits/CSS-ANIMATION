@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-ANIMATION</title>
+    <style>
+        .container{
+            border: 2px saddlebrown;
+            background-color: rgb(5, 117, 38);
+            height: 40vh;
+            width: 80vw;
+        }
+        .box{
+        
+            height: 4vh;
+            width:8vw ;
+            animation-name: AnkitkaAnimation;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.0, 0., 0.96);
+            
+        
+        }
+        @keyframes AnkitkaAnimation { 
+            from{  background-color: red;
+
+             }
+             to{
+                  transform: translateX(1000px);
+                  background-color: yellow;
+              }
+            }
+            
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
